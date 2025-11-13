@@ -1,0 +1,4 @@
+# packages.txt - Para Streamlit Cloud
+# Este arquivo é usado pelo Streamlit Cloud para instalar dependências do sistema
+# Deixe vazio se não precisar de pacotes do sistema
+

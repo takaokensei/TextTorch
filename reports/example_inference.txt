@@ -1,0 +1,37 @@
+=== Exemplo de Inferência - TextTorch ===
+
+--- Exemplo 1 ---
+Texto: 'The new graphics card from Nvidia offers amazing performance for gaming....'
+  → Predição: Classe 1
+  → Confiança: 48.73%
+
+--- Exemplo 2 ---
+Texto: 'Scientists are debating the existence of dark matter in the universe....'
+  → Predição: Classe 1
+  → Confiança: 19.43%
+
+--- Exemplo 3 ---
+Texto: 'O governo anunciou novas medidas para controlar a inflação....'
+  → Predição: Classe 1
+  → Confiança: 23.51%
+
+--- Exemplo 4 ---
+Texto: 'This email is an urgent security alert for your account....'
+  → Predição: Classe 1
+  → Confiança: 19.43%
+
+--- Exemplo 5 ---
+Texto: 'How can I fix this error in my Python code?...'
+  → Predição: Classe 1
+  → Confiança: 19.43%
+
+--- Exemplo 6 ---
+Texto: 'The best hockey players will compete for the Stanley Cup....'
+  → Predição: Classe 1
+  → Confiança: 19.43%
+
+--- Exemplo 7 ---
+Texto: 'A discussão sobre a reforma tributária continua no congresso....'
+  → Predição: Classe 4
+  → Confiança: 26.01%
+

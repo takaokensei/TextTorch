@@ -1,0 +1,44 @@
+# TextTorch Configuration File
+# Arquivo de configuração para o pipeline de classificação de texto
+
+# Tipo de representação: 'tfidf' ou 'embedding'
+# Para trocar de TF-IDF para embeddings, altere este valor e reexecute 02_representation.ipynb
+representation: tfidf
+
+# Configurações do modelo
+model_type: feedforward  # feedforward para TF-IDF, lstm para embeddings
+
+# Dimensões (auto = calculado automaticamente)
+input_dim: auto
+hidden_dim: 512
+dropout: 0.5
+n_classes: auto
+
+# Hiperparâmetros de treinamento
+batch_size: 32
+learning_rate: 0.001
+epochs: 10
+weight_decay: 0.0001
+
+# Configurações de embedding (usado apenas quando representation: embedding)
+embedding_dim: 300
+vocab_size: auto
+pretrained_embeddings: null  # caminho para embeddings pré-treinados (ex: GloVe)
+
+# Reprodutibilidade
+seed: 42
+
+# Dataset
+dataset: 20newsgroups  # opcoes: '20newsgroups', 'custom_csv' (use apenas um por vez)
+test_size: 0.1
+val_size: 0.1
+
+# Preprocessamento
+min_df: 5
+max_df: 0.8
+ngram_range: [1, 2]
+max_features: 10000
+
+# Early stopping
+early_stopping: true
+patience: 3
